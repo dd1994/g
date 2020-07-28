@@ -1,6 +1,6 @@
 {
   "name": "@antv/g-canvas",
-  "version": "0.5.0-beta.1",
+  "version": "0.5.0-beta.3",
   "description": "A canvas library which providing 2d",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -24,7 +24,7 @@
     "coverage-generator": "torch --coverage --compile --source-pattern src/*.js,src/**/*.js --opts tests/mocha.opts",
     "coverage-viewer": "torch-coverage",
     "test": "torch --renderer --compile --opts tests/mocha.opts",
-    "test-live": "torch --compile --interactive tests/unit/",
+    "test-live": "torch --compile --interactive tests/unit",
     "tsc": "tsc --noEmit",
     "typecheck": "tsc --noEmit",
     "dist": "webpack --config webpack.config.js --mode production"
