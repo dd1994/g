@@ -34,6 +34,8 @@ abstract class Canvas extends Container implements ICanvas {
    * 初始化容器
    */
   initContainer() {
+    // 如果传入的 container 参数是个字符串，则认为该字符串是个id, 将 container 设置为该id对应的 dom
+    // 如果传入的 container 参数不是字符串，则认为该参数是个 dom，不做处理（todo: 这样会导致如果用户传入了其它类型，比如 null, 报错信息会非常难看懂）
     let container = this.get('container');
     if (isString(container)) {
       container = document.getElementById(container);
