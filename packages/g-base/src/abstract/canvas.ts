@@ -48,6 +48,7 @@ abstract class Canvas extends Container implements ICanvas {
    * 初始化 DOM
    */
   initDom() {
+    // 这里的 el 为画布容器，因为 canvas 和 svg 需要的 dom 容器不一样，所以 createDom 是一个抽象方法
     const el = this.createDom();
     this.set('el', el);
     // 附加到容器

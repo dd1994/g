@@ -78,6 +78,7 @@ class Canvas extends AbstractCanvas {
     super.setDOMSize(width, height);
     const context = this.get('context');
     const el = this.get('el');
+    // 解决在高清屏下模糊的问题
     const pixelRatio = this.getPixelRatio();
     el.width = pixelRatio * width;
     el.height = pixelRatio * height;
